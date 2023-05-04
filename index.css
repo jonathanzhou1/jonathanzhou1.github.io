@@ -1,0 +1,7 @@
+#picSlides {
+   float: left;
+   width: 100%;
+   height: 700px;
+   object-fit: scale-down;
+   overflow: hidden;
+}
