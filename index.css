@@ -1,4 +1,5 @@
 #picSlides {
+   margin-top: 5em;
    float: left;
    width: 100%;
    height: 580px;
@@ -27,3 +28,49 @@
    transition: transform .3s ease;
 }
   
+
+/* CSS background from alvarotrigo */
+
+.text-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+  
+  .text-container h1{
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225,225,225, .01);
+    /*Image from lovepik!*/
+    background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-color-gradient-background-image_400078872.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+
+  @media only screen and (max-width: 1026px) {
+    .text-container {
+        display: none;
+    }
+}
