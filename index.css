@@ -3,14 +3,13 @@ html {
 }
 
 #picSlides {
-   margin-top: 5vh;
-   float: left;
-   width: 100%;
-   height: 580px;
-   object-fit: scale-down;
-   overflow: hidden;
+  margin-top: 5vh;
+  float: left;
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  overflow: hidden;
 }
-  
 
 /* CSS background from alvarotrigo */
 
@@ -52,7 +51,7 @@ html {
   }   
 }
 
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 820px) {
     .text-container {
         display: none;
     }
