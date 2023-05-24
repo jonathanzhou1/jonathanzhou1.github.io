@@ -2,8 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: linear-gradient(180deg, black, rgb(72, 72, 72), white);
+@media only screen and (max-width: 819px) {
+  body {
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  body {
+    background-image: linear-gradient(180deg, black, rgb(72, 72, 72), white);
+  }
 }
 
 #picSlides {
