@@ -13,7 +13,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" type="image/x-icon" href="favicons/home.ico">
+        <script src="./theme-toggle.js"></script>
         <title>Home</title>
+        <script>
+            function update(e){
+                var x = e.clientX || e.touches[0].clientX
+                var y = e.clientY || e.touches[0].clientY
+
+                document.documentElement.style.setProperty('--cursorX', x + 'px')
+                document.documentElement.style.setProperty('--cursorY', y + 'px')
+            }
+
+            document.addEventListener('mousemove',update)
+            document.addEventListener('touchmove',update)
+        </script>
     </head>
     <body style="margin-bottom: 10vh; font-family: 'Poppins', sans-serif;">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
@@ -59,7 +72,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-top: 5vh;">
+            
+                <div id="textCol" class="col-md-6" style="margin-top: 5vh;">
                     <h3 class="display-5 font-weight-bold">ACADEMICS: </h3>
                     <p>
                         I am passionate about Computer Systems, Software Development, and the Philosophy of Personal Happiness.
