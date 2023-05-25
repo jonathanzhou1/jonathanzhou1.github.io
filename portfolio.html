@@ -31,10 +31,39 @@
                 </div>
             </div>
         </nav>
+
         <div class="text-center" style="color: black;">
             <h1 class="display-4">Portfolio</h1>
             <p class="lead">Highway through History!</p>
         </div>
+
+        <div class="tag">
+            <button onclick="topFunction()" id="topBtn" title="Return to top">Top &#8593</button>
+        </div>
+
+        <script>
+            let topButton = document.getElementById("topBtn");
+            var tag = $(".tag");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                {
+                    $(tag).addClass("visible");
+                }
+                else
+                {
+                    $(tag).removeClass("visible");
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <div class="container">
             <div class="timeline">
                 <div class="timeline-container timeline-left">
@@ -89,7 +118,7 @@
                         <h2>2021</h2>
                         <p>Super Mario Bathroom Rush : Scratch</p>
                         <p>Created a Super Mario spinoff video game in Scratch for my AP Computer Science Principles class.</p>
-                        <iframe src="https://scratch.mit.edu/projects/462168539/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="width: 100%;"></iframe>
+                        <iframe src="https://scratch.mit.edu/projects/462168539/embed" allowtransparency="true" width="485" height="270" frameborder="0" scrolling="no" allowfullscreen style="width: 100%;"></iframe>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,39 @@
 /**BLOG SECTION**/
 .blogPost {
     width: 100%;
-    padding: 30px 30px 20px 30px;
+    padding: 30px 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: linear-gradient(rgb(247, 228, 213), rgb(247, 228, 213) 50%, rgb(236, 167, 133) 50%, rgb(236, 167, 133));
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+    position: relative;
+    animation: down-bump 0.2s ease;
+}
+
+.blogPost:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.2s ease;
+    padding: 26px;
+}
+
+
+@keyframes up-bump {
+    0% { padding-top: 30px; }
+    100% { padding-top: 26px; }
+}
+@keyframes down-bump {
+    0% { padding-top: 26px; }
+    100% { padding-top: 30px; }
 }
 
 .blogTitle {
     text-align: left;
 }
+
+body {
+    background-color: rgb(249, 201, 159);
+}
+

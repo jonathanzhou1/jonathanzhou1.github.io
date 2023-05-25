@@ -114,3 +114,42 @@ body {
         left: 0%;
     }
 }
+
+/*Scroll to top btn*/
+#topBtn {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+
+    padding: 20px;
+    background: linear-gradient(rgb(233, 227, 227), rgb(233, 227, 227) 50%, rgb(187, 225, 177) 50%, rgb(187, 225, 177));
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.2s ease;
+}
+
+#topBtn:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.2s ease;
+    padding: 19px;
+}
+
+.tag {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.tag.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s, visibility 0.4s;
+}
