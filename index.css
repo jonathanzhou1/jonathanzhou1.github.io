@@ -91,7 +91,7 @@
   }   
 }
 
-/*Only show the beginning screen if large enough to hand;e*/
+/*Only show the beginning screen if large enough to handle*/
 @media only screen and (max-width: 820px) {
     .text-container {
         display: none;
@@ -109,8 +109,8 @@
     z-index: 100;
     text-decoration: none;
     text-shadow: 0;
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     z-index: 9;
