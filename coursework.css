@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+}
+
+.card {
+    border-radius: 8px !important;
+    min-width: 300px !important;
+    margin-bottom: 3vh !important;
+}
+
+#card1 {
+    width: 100%;
+    padding: 30px 30px;
+    border-radius: 8px;
+    background: linear-gradient(rgb(213, 247, 234), rgb(213, 247, 234) 50%, rgb(236, 245, 193) 75%, rgb(254, 226, 184));
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+    position: relative;
+    animation: down-bump 0.2s ease;
+}
+
+#card1:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.2s ease;
+    padding: 26px;
+}
+
+#card2 {
+    width: 100%;
+    padding: 30px 30px;
+    border-radius: 8px;
+    background: linear-gradient(rgb(213, 233, 247), rgb(213, 233, 247) 50%, rgb(192, 198, 250) 75%, rgb(214, 188, 246));
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+    position: relative;
+    animation: down-bump 0.2s ease;
+}
+
+#card2:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.2s ease;
+    padding: 26px;
+}
+
+
+@keyframes up-bump {
+    0% { padding-top: 30px; }
+    100% { padding-top: 26px; }
+}
+@keyframes down-bump {
+    0% { padding-top: 26px; }
+    100% { padding-top: 30px; }
+}
