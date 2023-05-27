@@ -29,7 +29,7 @@ body {
     width: 100%;
     padding: 30px 30px;
     border-radius: 8px;
-    background: linear-gradient(rgb(213, 233, 247), rgb(213, 233, 247) 50%, rgb(192, 198, 250) 75%, rgb(214, 188, 246));
+    background: linear-gradient(rgb(213, 233, 247), rgb(213, 233, 247) 50%, rgb(214, 215, 246) 76%, rgb(228, 212, 250) 90%, rgb(230, 199, 252));
     background-size: 100% 200%;
     transition: all 0.2s ease;
     position: relative;
