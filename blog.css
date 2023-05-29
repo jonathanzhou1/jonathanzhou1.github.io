@@ -1,12 +1,9 @@
 /**BLOG SECTION**/
 .blogPost {
-    width: 100%;
     padding: 30px 30px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 15px;
-    border-radius: 8px;
-    background: linear-gradient(rgb(247, 228, 213), rgb(247, 228, 213) 50%, rgb(236, 167, 133) 50%, rgb(236, 167, 133));
+    border-radius: 6px;
+    background: linear-gradient(rgb(247, 228, 213), rgb(247, 228, 213) 50%, rgb(247, 175, 139) 50%, rgb(247, 175, 139));
     background-size: 100% 200%;
     transition: all 0.2s ease;
     position: relative;
@@ -16,16 +13,16 @@
 .blogPost:hover {
     background-position: 100% 100%;
     animation: up-bump 0.2s ease;
-    padding: 26px;
+    padding: 28px;
 }
 
 
 @keyframes up-bump {
     0% { padding-top: 30px; }
-    100% { padding-top: 26px; }
+    100% { padding-top: 28px; }
 }
 @keyframes down-bump {
-    0% { padding-top: 26px; }
+    0% { padding-top: 28px; }
     100% { padding-top: 30px; }
 }
 
