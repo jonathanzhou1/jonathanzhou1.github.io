@@ -1,2 +1,4 @@
 # jonathanzhou1.github.io
-New modernized style personal website
+My personal website hosted at jonathanzhou.me
+
+Coded in HTML/CSS + JavaScript using the Bootstrap Library!
