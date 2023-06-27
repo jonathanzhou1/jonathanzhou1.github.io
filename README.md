@@ -1,7 +1,7 @@
 # jonathanzhou1.github.io
 My personal website hosted at jonathanzhou.me
 
-Coded in HTML/CSS + JavaScript using the Bootstrap Library!
+Coded in HTML/CSS + JavaScript utilizing the Bootstrap Library!
 
 Attributions are on webpage, source code, and may be here in the ReadMe.
 
