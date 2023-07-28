@@ -23,7 +23,7 @@ body {
 #card1:hover {
     background-position: 100% 100%;
     animation: up-bump 0.2s ease;
-    padding: 26px;
+    padding: 28px;
 }
 
 #card2 {
@@ -40,16 +40,16 @@ body {
 #card2:hover {
     background-position: 100% 100%;
     animation: up-bump 0.2s ease;
-    padding: 26px;
+    padding: 28px;
 }
 
 
 @keyframes up-bump {
     0% { padding-top: 30px; }
-    100% { padding-top: 26px; }
+    100% { padding-top: 28px; }
 }
 @keyframes down-bump {
-    0% { padding-top: 26px; }
+    0% { padding-top: 28px; }
     100% { padding-top: 30px; }
 }
 
