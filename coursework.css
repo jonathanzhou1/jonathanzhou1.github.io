@@ -57,7 +57,7 @@ body {
 }
 
 #card4 {
-    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 50%, rgb(220, 250, 222) 50%, rgb(176, 225, 183) 76%, rgb(164, 220, 167) 90%, rgb(139, 198, 140));
+    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
     background-size: 100% 200%;
     transition: all 0.2s ease;
     position: relative;
