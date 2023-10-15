@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="general.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="blog.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="favicons/pencil.ico">
-        <title>Blog</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="general.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="blog.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicons/pencil.ico" />
+    <title>Blog</title>
+  </head>
 
-    <body style="font-family: 'Poppins', sans-serif;">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">HOME</a>
-                    <a class="nav-item nav-link" href="portfolio.html">PORTFOLIO</a>
-                    <a class="nav-item nav-link" href="cs.html">COURSEWORK</a>
-                    <a class="nav-item nav-link active" href="blog.html" style="color: black;">BLOG<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="contact.html">CONTACT</a>
-                </div>
-            </div>
-        </nav>
-        <div class="jumbotron text-center" style="background-color: rgb(249, 201, 159); margin-bottom: -5vh; color: black;">
-            <h1 class="display-4">Blog</h1>
+  <body style="font-family: 'Poppins', sans-serif">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">HOME</a>
+          <a class="nav-item nav-link" href="portfolio.html">PORTFOLIO</a>
+          <a class="nav-item nav-link" href="cs.html">COURSEWORK</a>
+          <a
+            class="nav-item nav-link active"
+            href="blog.html"
+            style="color: black"
+            >BLOG<span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="contact.html">CONTACT</a>
         </div>
-        <div class="container">
-            <main>
-                <div class="blogPost">
-                    <a href="blog-posts/charity.html"><b class="blogCaption">God, <em>Gilead</em>, and the Gift of Charity</b></a>
-                    <p>Should we love people regardless of whether or not they are deserving of love? Should loving the unlovable be deemed practical and laudable?</p>
-                </div>
-        
-                <div class="blogPost">
-                    <a href="blog-posts/symposium.html"><b class="blogCaption">A Student's Symposium</b></a>
-                    <p>A discussion on love, charity, and friendship.</p>
-                </div>
-
-                <div class="blogPost">
-                    <a href="blog-posts/eros.html"><b class="blogCaption">The Pursuit of Passion</b></a>
-                    <p>What is Eros, or romantic love? A comparison between C.S. Lewis and Alice Munros' perspectives, and my own.</p>
-                </div>
-
-                <div class="blogPost">
-                    <a href="blog-posts/life.html"><b class="blogCaption">The Life of 530 Words</b></a>
-                    <p>A collection of poetry.</p>
-                </div>
-
-                <div class="blogPost">
-                    <a href="blog-posts/cyclamen.html"><b class="blogCaption">Cyclamen</b></a>
-                    <p>Strands of thoughts, wrapped up in a bouquet of flowers.</p>
-                </div>
-            </main>
+      </div>
+    </nav>
+    <div
+      class="jumbotron text-center"
+      style="
+        background-color: rgb(249, 201, 159);
+        margin-bottom: -5vh;
+        color: black;
+      "
+    >
+      <h1 class="display-4">Blog</h1>
+    </div>
+    <div class="container">
+      <main>
+        <div class="blogPost">
+          <a href="blog-posts/charity.html"
+            ><b class="blogCaption"
+              >God, <em>Gilead</em>, and the Gift of Charity</b
+            ></a
+          >
+          <p>
+            Should we love people regardless of whether or not they are
+            deserving of love? Should loving the unlovable be deemed practical
+            and laudable?
+          </p>
         </div>
-    </body>
+
+        <div class="blogPost">
+          <a href="blog-posts/symposium.html"
+            ><b class="blogCaption">A Student's Symposium</b></a
+          >
+          <p>A discussion on love, charity, and friendship.</p>
+        </div>
+
+        <div class="blogPost">
+          <a href="blog-posts/eros.html"
+            ><b class="blogCaption">The Pursuit of Passion</b></a
+          >
+          <p>
+            What is Eros, or romantic love? A comparison between C.S. Lewis and
+            Alice Munros' perspectives, and my own.
+          </p>
+        </div>
+
+        <div class="blogPost">
+          <a href="blog-posts/life.html"><b class="blogCaption">Brother</b></a>
+          <p>Poetry from The Life of 530 Words</p>
+        </div>
+
+        <!-- <div class="blogPost">
+          <a href="blog-posts/cyclamen.html"
+            ><b class="blogCaption">Cyclamen</b></a
+          >
+          <p>Strands of thoughts, wrapped up in a bouquet of flowers.</p>
+        </div> -->
+      </main>
+    </div>
+  </body>
 </html>
