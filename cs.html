@@ -36,6 +36,34 @@
         <div class="jumbotron text-center rounded-0" style="background: none; color: black; margin-bottom: -30px;">
             <h1 class="display-4">Coursework</h1>
         </div>
+
+        <div class="tag">
+            <button onclick="topFunction()" id="topBtn" title="Return to top">Top &#8593</button>
+        </div>
+
+        <script>
+            let topButton = document.getElementById("topBtn");
+            var tag = $(".tag");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                {
+                    $(tag).addClass("visible");
+                }
+                else
+                {
+                    $(tag).removeClass("visible");
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <div class="container">
             <div id="first-page">
                 <main>

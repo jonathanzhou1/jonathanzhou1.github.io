@@ -34,6 +34,34 @@
             <h1 class="display-4">The Pursuit of Passion</h1>
             <p class="lead">What is Eros, or romantic love? A comparison between C.S. Lewis and Alice Munros' perspectives, and my own.</p>
         </div>
+
+        <div class="tag">
+            <button onclick="topFunction()" id="topBtn" title="Return to top">Top &#8593</button>
+        </div>
+
+        <script>
+            let topButton = document.getElementById("topBtn");
+            var tag = $(".tag");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                {
+                    $(tag).addClass("visible");
+                }
+                else
+                {
+                    $(tag).removeClass("visible");
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <div class="container">
             <main>
                 <div>

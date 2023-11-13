@@ -7,14 +7,24 @@
 @media only screen and (min-width: 820px) {
   /* Flashlight Overlay */
   body {
-    background-image: linear-gradient(180deg, black, rgb(41, 40, 40), rgb(99, 98, 98), rgb(156, 155, 155), rgb(228, 228, 228), white 100vh, white, white);
+    background-image: linear-gradient(
+      180deg,
+      black,
+      rgb(41, 40, 40),
+      rgb(99, 98, 98),
+      rgb(156, 155, 155),
+      rgb(228, 228, 228),
+      white 100vh,
+      white,
+      white
+    );
   }
   html {
     --cursorX: 50vw;
     --cursorY: 50vh;
   }
   html:before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -22,10 +32,10 @@
     pointer-events: none;
     background: radial-gradient(
       circle 20vmax at var(--cursorX) var(--cursorY),
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,.5) 80%,
-      rgba(0,0,0,.75) 100%
-    )
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
   }
 
   /*
@@ -43,7 +53,6 @@
   */
 }
 
-
 /*Image Gallery CSS*/
 #picSlides {
   width: 100%;
@@ -60,25 +69,26 @@
   justify-content: center;
   align-items: center;
 }
-  
-.text-container h1{
+
+.text-container h1 {
   font-size: 150px;
   color: rgba(241, 233, 151, 0.01);
   background-image: url("https://images.unsplash.com/photo-1636728557326-5d78e0abfe13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80");
   background-repeat: repeat;
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   animation: animate 15s ease-in-out infinite;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 150px;
 }
-  
+
 @keyframes animate {
-  0%, 100% {
+  0%,
+  100% {
     background-position: left top;
   }
-  25%{
+  25% {
     background-position: right bottom;
   }
   50% {
@@ -86,7 +96,7 @@
   }
   75% {
     background-position: right top;
-  }   
+  }
 }
 
 /*Only show the beginning screen if large enough to handle*/
@@ -117,33 +127,60 @@
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
   -webkit-animation: fade_move_down 4s ease-in-out infinite;
-  -moz-animation:    fade_move_down 4s ease-in-out infinite;
-  animation:         fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
 }
-  
+
 @-webkit-keyframes fade_move_down {
-  0%   { -webkit-transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  0% {
+    -webkit-transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  50% { -webkit-transform:translate(0, 8px) rotate(45deg); opacity: 1; }
+  50% {
+    -webkit-transform: translate(0, 8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  100%   { -webkit-transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  100% {
+    -webkit-transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 }
 @-moz-keyframes fade_move_down {
-  0%   { -moz-transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  0% {
+    -moz-transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  50% { -moz-transform:translate(0, 8px) rotate(45deg); opacity: 1; }
+  50% {
+    -moz-transform: translate(0, 8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  100%   { -webkit-transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  100% {
+    -webkit-transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 }
 @keyframes fade_move_down {
-  0%   { transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  0% {
+    transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  50% { transform:translate(0, 8px) rotate(45deg); opacity: 1; }
+  50% {
+    transform: translate(0, 8px) rotate(45deg);
+    opacity: 1;
+  }
 
-  100%   { -webkit-transform:translate(0, -8px) rotate(45deg); opacity: 1;  }
+  100% {
+    -webkit-transform: translate(0, -8px) rotate(45deg);
+    opacity: 1;
+  }
 }
-  
-/*LinkedIn Logo*/
+
+/*Social Media Logos*/
 .fa {
   padding-top: 25px;
   width: 50px;
@@ -164,10 +201,128 @@
 }
 
 .fa-instagram {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
   color: white;
 }
 
 .fa-github {
   background: black;
+}
+
+/** INTRO SECTION STYLING **/
+.intro-component {
+  border-radius: 8px;
+  min-width: 300px;
+  margin-bottom: 3vh;
+  border: 0;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  width: 100%;
+  padding: 30px 30px;
+  border-radius: 8px;
+}
+
+#about-me {
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(213, 247, 234) 50%,
+    rgb(236, 245, 193) 75%,
+    rgb(254, 226, 184)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#about-me:hover {
+  background-position: 100% 100%;
+  padding: 28px;
+}
+
+#academics {
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(213, 233, 247) 50%,
+    rgb(214, 215, 246) 76%,
+    rgb(228, 212, 250) 90%,
+    rgb(230, 199, 252)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#academics:hover {
+  background-position: 100% 100%;
+  padding: 28px;
+}
+
+#writings {
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(247, 213, 213) 50%,
+    rgb(254, 181, 181) 76%,
+    rgb(255, 157, 157) 90%,
+    rgb(243, 115, 115)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#writings:hover {
+  background-position: 100% 100%;
+  padding: 28px;
+}
+
+#personal-links {
+  background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#personal-links:hover {
+  background-position: 100% 100%;
+  padding: 28px;
+}
+
+#verification {
+  margin-top: 3vh;
+  background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#verification:hover {
+  background-position: 100% 100%;
+  padding: 28px;
 }

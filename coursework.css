@@ -1,85 +1,87 @@
 body {
-    background-color: rgb(255, 254, 243) !important;
-    font-family: 'Poppins', sans-serif !important;
+  background-color: rgb(255, 254, 243) !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .card {
-    border-radius: 8px !important;
-    min-width: 300px !important;
-    margin-bottom: 3vh !important;
-    border: 0 !important;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2) !important;
-    width: 100%;
-    padding: 30px 30px;
-    border-radius: 8px;
+  border-radius: 8px !important;
+  min-width: 300px !important;
+  margin-bottom: 3vh !important;
+  border: 0 !important;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2) !important;
+  width: 100%;
+  padding: 30px 30px;
+  border-radius: 8px;
 }
 
 #card1 {
-    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 50%, rgb(213, 247, 234) 50%, rgb(236, 245, 193) 75%, rgb(254, 226, 184));
-    background-size: 100% 200%;
-    transition: all 0.2s ease;
-    position: relative;
-    animation: down-bump 0.2s ease;
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(213, 247, 234) 50%,
+    rgb(236, 245, 193) 75%,
+    rgb(254, 226, 184)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 #card1:hover {
-    background-position: 100% 100%;
-    animation: up-bump 0.2s ease;
-    padding: 28px;
+  background-position: 100% 100%;
+  padding: 28px;
 }
 
 #card2 {
-    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 50%, rgb(213, 233, 247) 50%, rgb(214, 215, 246) 76%, rgb(228, 212, 250) 90%, rgb(230, 199, 252));
-    background-size: 100% 200%;
-    transition: all 0.2s ease;
-    position: relative;
-    animation: down-bump 0.2s ease;
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(213, 233, 247) 50%,
+    rgb(214, 215, 246) 76%,
+    rgb(228, 212, 250) 90%,
+    rgb(230, 199, 252)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 #card2:hover {
-    background-position: 100% 100%;
-    animation: up-bump 0.2s ease;
-    padding: 28px;
+  background-position: 100% 100%;
+  padding: 28px;
 }
 
 #card3 {
-    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 50%, rgb(247, 213, 213) 50%, rgb(254, 181, 181) 76%, rgb(255, 157, 157) 90%, rgb(243, 115, 115));
-    background-size: 100% 200%;
-    transition: all 0.2s ease;
-    position: relative;
-    animation: down-bump 0.2s ease;
+  background: linear-gradient(
+    rgb(252, 250, 229),
+    rgb(252, 250, 229) 50%,
+    rgb(247, 213, 213) 50%,
+    rgb(254, 181, 181) 76%,
+    rgb(255, 157, 157) 90%,
+    rgb(243, 115, 115)
+  );
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 #card3:hover {
-    background-position: 100% 100%;
-    animation: up-bump 0.2s ease;
-    padding: 28px;
+  background-position: 100% 100%;
+  padding: 28px;
 }
 
 #card4 {
-    background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
-    background-size: 100% 200%;
-    transition: all 0.2s ease;
-    position: relative;
-    animation: down-bump 0.2s ease;
+  background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
+  background-size: 100% 200%;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 #card4:hover {
-    background-position: 100% 100%;
-    animation: up-bump 0.2s ease;
-    padding: 28px;
-}
-
-
-@keyframes up-bump {
-    0% { padding-top: 30px; }
-    100% { padding-top: 28px; }
-}
-@keyframes down-bump {
-    0% { padding-top: 28px; }
-    100% { padding-top: 30px; }
+  background-position: 100% 100%;
+  padding: 28px;
 }
 
 #first-page {
-    height: 100vh;
+  height: 100vh;
 }
