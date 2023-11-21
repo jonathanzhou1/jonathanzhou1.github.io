@@ -1,8 +1,9 @@
-https://jonathanzhou.me/index.html
+https://jonathanzhou.me
 https://jonathanzhou.me/portfolio.html
 https://jonathanzhou.me/cs.html
 https://jonathanzhou.me/sem-coursework/fall2022.html
 https://jonathanzhou.me/sem-coursework/spring2023.html
+https://jonathanzhou.me/sem-coursework/fall2023.html
 https://jonathanzhou.me/blog.html
 https://jonathanzhou.me/blog-posts/charity.html
 https://jonathanzhou.me/blog-posts/symposium.html
