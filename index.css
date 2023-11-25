@@ -37,20 +37,6 @@
       rgba(0, 0, 0, 0.75) 100%
     );
   }
-
-  /*
-    <div style="width: auto;">
-                        <img src="lightbulb.png" alt="lightbulb" onclick="changeBackground()" style="width: 50px; height: 100%;">
-                        Press the lightbult!
-                    </div>
-                    
-                    <script>
-                        function changeBackground() {
-                            var element = document.getElementById("textCol");
-                            element.style.backgroundImage = "radial-gradient(circle at center, white, transparent 100%)";
-                        }
-                    </script>
-  */
 }
 
 /*Image Gallery CSS*/

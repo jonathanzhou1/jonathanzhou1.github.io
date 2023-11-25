@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../favicons/mail.ico" />
+    <title>Contact</title>
+  </head>
+
+  <body
+    style="
+      font-family: 'Poppins', sans-serif;
+      background-color: rgb(237, 250, 228);
+    "
+  >
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../index.html">HOME</a>
+          <a class="nav-item nav-link" href="../portfolio/portfolio.html"
+            >PORTFOLIO</a
+          >
+          <a class="nav-item nav-link" href="../coursework/cs.html"
+            >COURSEWORK</a
+          >
+          <a class="nav-item nav-link" href="../blog/blog.html">BLOG</a>
+          <a
+            class="nac-item nav-link active"
+            href="contact.html"
+            style="color: black"
+            >CONTACT<span class="sr-only">(current)</span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="jumbotron text-center"
+      style="background: none; margin-bottom: -5vh; color: black"
+    >
+      <h1 class="display-4">Contact Me</h1>
+      <p class="small">Form Styling inspired by Valeriia</p>
+    </div>
+    <div class="container">
+      <main>
+        <div class="wrapper centered">
+          <article class="letter">
+            <form id="form" method="POST">
+              <div class="side">
+                <h1>Send a Message</h1>
+                <p>
+                  <textarea
+                    name="Message"
+                    placeholder="Your message"
+                  ></textarea>
+                </p>
+              </div>
+              <div class="side">
+                <p>
+                  <input
+                    type="text"
+                    name="Name"
+                    id="Name"
+                    placeholder="Your name"
+                  />
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="Email"
+                    placeholder="Your email"
+                  />
+                </p>
+                <p>
+                  <button type="submit" value="submit" id="submit">Send</button>
+                </p>
+              </div>
+            </form>
+            <!--Form to sheet code inspired by kromate on GitHub-->
+            <script>
+              const form = document.querySelector("#form");
+              const submitButton = document.querySelector("#submit");
+              const scriptURL =
+                "https://script.google.com/macros/s/AKfycbylLR1ztaJhrFoAxXjBzDdJ1BcpUG8Xu2zArUbt9vw9hIDZeAu3jYz-QEGpfeLSXi9k/exec";
+
+              form.addEventListener("submit", (e) => {
+                submitButton.disabled = true;
+                e.preventDefault();
+                let requestBody = new FormData(form);
+                fetch(scriptURL, { method: "POST", body: requestBody })
+                  .then((response) => {
+                    document.body.classList.add("sent");
+                    submitButton.disabled = false;
+                  })
+                  .catch((error) => {
+                    alert("Error!", error.message);
+                    submitButton.disabled = false;
+                  });
+              });
+            </script>
+          </article>
+          <div class="envelope front"></div>
+          <div class="envelope back"></div>
+        </div>
+        <p class="result-message text-center">Thank you for your message</p>
+      </main>
+    </div>
+  </body>
+</html>

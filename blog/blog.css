@@ -1,0 +1,36 @@
+/**BLOG SECTION**/
+.blogPost {
+    padding: 20px 30px;
+    margin-top: -15px;
+    border-radius: 12px;
+    background: linear-gradient(rgb(247, 228, 213), rgb(249, 201, 159) 50%, rgb(252, 162, 117) 51%, rgb(249, 173, 135) 65%, rgb(249, 201, 159));
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+    position: relative;
+    animation: down-bump 0.2s ease;
+}
+
+.blogPost:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.2s ease;
+    padding: 21px;
+}
+
+
+@keyframes up-bump {
+    0% { padding-top: 20px; }
+    100% { padding-top: 21px; }
+}
+@keyframes down-bump {
+    0% { padding-top: 21px; }
+    100% { padding-top: 20px; }
+}
+
+.blogTitle {
+    text-align: left;
+}
+
+body {
+    background-color: rgb(249, 201, 159);
+}
+
