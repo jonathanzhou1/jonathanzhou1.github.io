@@ -80,8 +80,10 @@
 .timeline-content:hover {
   background-position: 100% 100%;
   animation: up-bump 0.2s ease;
-  padding: 30px 40px;
-  margin: -10px -10px;
+  padding-top: 18px;
+  padding-right: 35px;
+  padding-left: 25px;
+  padding-bottom: 22px;
 }
 
 img, iframe, video {
@@ -91,21 +93,23 @@ img, iframe, video {
 @keyframes up-bump {
   0% {
     padding: 20px 30px;
-    margin: 0;
   }
   100% {
-    padding: 30px 40px;
-    margin: -10px -10px;
+    padding-top: 18px;
+  padding-right: 35px;
+  padding-left: 25px;
+  padding-bottom: 22px;
   }
 }
 @keyframes down-bump {
   0% {
-    padding: 30px 40px;
-    margin: -10px -10px;
+    padding-top: 18px;
+  padding-right: 35px;
+  padding-left: 25px;
+  padding-bottom: 22px;
   }
   100% {
     padding: 20px 30px;
-    margin: 0;
   }
 }
 
