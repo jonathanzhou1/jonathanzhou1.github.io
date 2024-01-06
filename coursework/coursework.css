@@ -3,6 +3,29 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+.button {
+  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.2) !important;
+  background-color: rgb(236, 245, 193) !important;
+  color: rgb(54, 54, 54) !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: rgb(213, 233, 247) !important;
+}
+
 .card {
   border-radius: 8px !important;
   min-width: 300px !important;
@@ -14,72 +37,43 @@ body {
   border-radius: 8px;
 }
 
-#card1 {
-  background: linear-gradient(
+.fall-card {
+  /* background: linear-gradient(
     rgb(252, 250, 229),
     rgb(252, 250, 229) 50%,
     rgb(213, 247, 234) 50%,
     rgb(236, 245, 193) 75%,
     rgb(254, 226, 184)
-  );
+  ); */
+  background-color: rgb(252, 250, 229) !important;
   background-size: 100% 200%;
   transition: all 0.2s ease;
   position: relative;
 }
 
-#card1:hover {
+.fall-card:hover {
   background-position: 100% 100%;
-  padding: 28px;
+  /* padding: 32px; */
 }
 
-#card2 {
-  background: linear-gradient(
+.spring-card {
+  /* background: linear-gradient(
     rgb(252, 250, 229),
     rgb(252, 250, 229) 50%,
     rgb(213, 233, 247) 50%,
     rgb(214, 215, 246) 76%,
     rgb(228, 212, 250) 90%,
     rgb(230, 199, 252)
-  );
+  ); */
+  background-color: rgb(252, 250, 229) !important;
   background-size: 100% 200%;
   transition: all 0.2s ease;
   position: relative;
 }
 
-#card2:hover {
+.spring-card:hover {
   background-position: 100% 100%;
-  padding: 28px;
-}
-
-#card3 {
-  background: linear-gradient(
-    rgb(252, 250, 229),
-    rgb(252, 250, 229) 50%,
-    rgb(247, 213, 213) 50%,
-    rgb(254, 181, 181) 76%,
-    rgb(255, 157, 157) 90%,
-    rgb(243, 115, 115)
-  );
-  background-size: 100% 200%;
-  transition: all 0.2s ease;
-  position: relative;
-}
-
-#card3:hover {
-  background-position: 100% 100%;
-  padding: 28px;
-}
-
-#card4 {
-  background: linear-gradient(rgb(252, 250, 229), rgb(252, 250, 229) 100%);
-  background-size: 100% 200%;
-  transition: all 0.2s ease;
-  position: relative;
-}
-
-#card4:hover {
-  background-position: 100% 100%;
-  padding: 28px;
+  /* padding: 32px; */
 }
 
 #first-page {

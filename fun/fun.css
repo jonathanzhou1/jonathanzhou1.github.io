@@ -34,9 +34,9 @@
   
     .fractal {
       margin: auto;
-      width: 200px;
-      height: 200px;
-      border: 2px dotted white;
+      width: 250px;
+      height: 250px;
+      border: 3px dotted white;
       animation: fractal 2s infinite;
     }
   

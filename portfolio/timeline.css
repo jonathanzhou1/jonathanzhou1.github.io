@@ -66,36 +66,46 @@
   background: linear-gradient(
     rgb(233, 227, 227),
     rgb(233, 227, 227) 50%,
-    rgb(233, 194, 194) 50%,
-    rgb(233, 194, 194)
+    rgb(235, 209, 209) 50%,
+    rgb(235, 209, 209)
   );
   background-size: 100% 200%;
   transition: all 0.2s ease;
   position: relative;
   border-radius: 6px;
   animation: down-bump 0.2s ease;
+  margin: 0;
 }
 
 .timeline-content:hover {
   background-position: 100% 100%;
   animation: up-bump 0.2s ease;
-  padding: 19px;
+  padding: 30px 40px;
+  margin: -10px -10px;
+}
+
+img, iframe, video {
+  border-radius: 5px;
 }
 
 @keyframes up-bump {
   0% {
-    padding-top: 20px;
+    padding: 20px 30px;
+    margin: 0;
   }
   100% {
-    padding-top: 19px;
+    padding: 30px 40px;
+    margin: -10px -10px;
   }
 }
 @keyframes down-bump {
   0% {
-    padding-top: 19px;
+    padding: 30px 40px;
+    margin: -10px -10px;
   }
   100% {
-    padding-top: 20px;
+    padding: 20px 30px;
+    margin: 0;
   }
 }
 

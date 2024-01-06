@@ -29,13 +29,11 @@ body {
   );
   background-size: 100% 200%;
   transition: all 0.2s ease;
-  animation: down-bump 0.2s ease;
 }
 
 #topBtn:hover {
   background-position: 100% 100%;
-  animation: up-bump 0.2s ease;
-  padding: 19px;
+  padding: 21px;
 }
 
 .tag {

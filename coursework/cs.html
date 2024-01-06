@@ -41,6 +41,7 @@
             <button onclick="topFunction()" id="topBtn" title="Return to top">Top &#8593</button>
         </div>
 
+        <!--Scroll up button javascript-->
         <script>
             let topButton = document.getElementById("topBtn");
             var tag = $(".tag");
@@ -64,11 +65,18 @@
             }
         </script>
 
+        <!--Routing page javascript-->
+        <script>
+            function redirectToPage(url) {
+                window.location.href = url;
+            }
+        </script>
+
         <div class="container">
             <div id="first-page">
                 <main>
                     <div class="card-deck">
-                        <div id="card1" class="card">
+                        <div class="fall-card card">
                             <div class="card-body">
                                 <h4 class="card-title text-center">Fall 2022</h4>
                                 <p class="card-text">
@@ -82,11 +90,11 @@
                                 </p>
                             </div>
                             <div class="text-center">
-                                <a href="sem-coursework/fall2022.html" class="btn btn-outline-dark">Explore Curriculum</a>
+                                <button onclick="redirectToPage('sem-coursework/fall2022.html')" class="button">Explore Curriculum</button>
                             </div>
                         </div>
                     
-                        <div id="card2" class="card">
+                        <div class="spring-card card">
                             <div class="card-body">
                                 <h4 class="card-title text-center">Spring 2023</h4>
                                 <p class="card-text">
@@ -100,12 +108,12 @@
                                 </p>
                             </div>
                             <div class="text-center">
-                                <a href="sem-coursework/spring2023.html" class="btn btn-outline-dark">Explore Curriculum</a>
+                                <button onclick="redirectToPage('sem-coursework/spring2023.html')" class="button">Explore Curriculum</button>
                             </div>
                         </div>
                     </div>
                     <div class="card-deck">
-                        <div id="card3" class="card">
+                        <div class="fall-card card">
                             <div class="card-body">
                                 <h4 class="card-title text-center">Fall 2023</h4>
                                 <p class="card-text">
@@ -119,13 +127,13 @@
                                 </p>
                             </div>
                             <div class="text-center">
-                                <a href="sem-coursework/fall2023.html" class="btn btn-outline-dark">Explore Curriculum</a>
+                                <button onclick="redirectToPage('sem-coursework/fall2023.html')" class="button">Explore Curriculum</button>
                             </div>
                         </div>
 
-                        <div id="card4" class="card">
+                        <div class="spring-card card">
                             <div class="card-body">
-                                <h4 class="card-title text-center">TBD</h4>
+                                <h4 class="card-title text-center">Spring 2024</h4>
                                 <p class="card-text">
                                     <ul>
                                         
