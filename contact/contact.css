@@ -1,7 +1,19 @@
-@media only screen and (min-width: 550px)
+@media only screen and (min-width: 550px) and (min-height: 680px)
 {
-    /*Form style from Valerite-dev on CodePen*/
+  .mail {
+    box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
+    border-radius: 20px;
+  }
 
+  body {
+    height: 100vh;
+    background-image: url('nature-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+  }
+
+    /*Form style from Valerite-dev on CodePen*/
   textarea, input, button {
     line-height: 1.5rem;
     border: 0;
@@ -177,15 +189,23 @@
     
 }
 
-@media only screen and (max-width: 549px)
+@media only screen and ((max-width: 549px) or (max-height: 679px))
 {
-    .wrapper {
-        border-radius: 6px;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        background-color: #c8f5ae;
-        text-align: center;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
+  textarea, input {
+    border-radius: 5px;
+  }
+  .wrapper {
+    border-radius: 6px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #c8f5ae;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
+  }
+
+  .result-message {
+    display: none;
+  }
 }

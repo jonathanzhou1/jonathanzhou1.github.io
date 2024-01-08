@@ -1,5 +1,6 @@
 /**BLOG SECTION**/
 .blogPost {
+    box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
     padding: 20px 30px;
     margin-top: -15px;
     border-radius: 12px;
@@ -40,8 +41,16 @@
 }
 
 body {
-    background-image: url('snow-falling.gif');
-    background-size: 60vw;
     background-color: rgb(159, 192, 249);
+}
+
+/**Background animation*/
+@media only screen and (min-width: 700px)
+{
+    body {
+        background-image: url('snow-falling.gif');
+        background-size: 60vw;
+        background-color: rgb(159, 192, 249);
+    }
 }
 

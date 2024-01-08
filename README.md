@@ -10,3 +10,6 @@ Webpage Favicons created by Twemoji :D
 Falling leaves background from:
 https://freepngimg.com/png/35916-falling-leaves-transparent-background
 
+Snow falling gif from:
+https://www.animationsoftware7.com/gif/snow/snowflake/
+
