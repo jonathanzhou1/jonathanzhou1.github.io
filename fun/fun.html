@@ -53,28 +53,26 @@
       document.addEventListener("touchmove", update);
     </script>
   </head>
+
   <body style="margin-bottom: 10vh; font-family: 'Poppins', sans-serif">
     <div id="loading-screen">
       <h2 id="loading-text"></h2>
-      <div class="fractal">
-      </div>
-      <div class="fractal">
-      </div>
-      <div class="fractal">
-      </div>
+      <div class="fractal"></div>
+      <div class="fractal"></div>
+      <div class="fractal"></div>
     </div>
     <script>
       let progress = 0;
-      let interval = setInterval(function() {
+      let interval = setInterval(function () {
         progress += 1;
-        document.getElementById('loading-text').innerHTML = progress + '%';
+        document.getElementById("loading-text").innerHTML = progress + "%";
 
         if (progress >= 100) {
           clearInterval(interval);
-          let loadingScreen = document.getElementById('loading-screen');
-          loadingScreen.style.opacity = '0';
-          setTimeout(function() {
-            loadingScreen.style.display = 'none';
+          let loadingScreen = document.getElementById("loading-screen");
+          loadingScreen.style.opacity = "0";
+          setTimeout(function () {
+            loadingScreen.style.display = "none";
           }, 500);
         }
       }, 25);
@@ -96,24 +94,120 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a
-            class="nav-item nav-link active"
-            href="index.html"
-            style="color: white"
-            >HOME <span class="sr-only">(current)</span></a
+          <a class="nav-item nav-link" href="../index.html">HOME</a>
+          <a class="nav-item nav-link" href="portfolio/portfolio.html"
+            >PORTFOLIO</a
           >
-          <a class="nav-item nav-link" href="portfolio/portfolio.html">PORTFOLIO</a>
           <a class="nav-item nav-link" href="coursework/cs.html">COURSEWORK</a>
           <a class="nav-item nav-link" href="blog/blog.html">BLOG</a>
           <a class="nav-item nav-link" href="contact/contact.html">CONTACT</a>
+          <a
+            class="nav-item nav-link active"
+            href="fun.html"
+            style="color: white"
+            >FUN <span class="sr-only">(current)</span></a
+          >
         </div>
       </div>
     </nav>
 
+    <div
+      class="jumbotron text-center"
+      style="background: none; margin-bottom: -30px; color: black"
+    >
+      <h1 class="display-4">Fun, but Terrible UI</h1>
+      <p class="lead">A collection of hilariously awful UI interfaces<br><i>In Progress</i></p>
+    </div>
+
     <div class="container" id="textStart">
-      <div class="row">
-        <div id="textCol" class="col-lg-10" style="margin-top: 5vh">
-            <h1>In development. Wasn't that loading screen cool?</h1>
+      <div class="row" aria-label="Bad UI Age Selectors">
+        <div
+          id="textCol"
+          class="col-lg-10"
+          style="text-align: center; margin: auto"
+        >
+          <h1 aria-label="Age Selectos Header">Age Selectors</h1>
+          <div id="slider-container">
+            <div id="slider">
+              <div id="slider-handle"></div>
+              <div id="slider-age">Age: 0</div>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+              const slider = document.getElementById("slider");
+              const handle = document.getElementById("slider-handle");
+              const displayAge = document.getElementById("slider-age");
+              const minAge = 0;
+              const maxAge = 100;
+
+              let isDragging = false;
+
+              const updateAge = (age) => {
+                displayAge.innerText = `Age: ${age}`;
+              };
+
+              const calculateValue = (position) => {
+                const sliderWidth = slider.offsetWidth;
+                const handleWidth = handle.offsetWidth;
+                const maxPosition = sliderWidth - handleWidth / 2;
+                const minPosition = 0 - handleWidth / 2;
+                const valueRange = maxAge - minAge;
+                const positionRatio =
+                  (position - minPosition) / (maxPosition - minPosition);
+
+                //update size of handle
+                let sizeFactor = 1;
+                if (positionRatio < 0.6) {
+                  sizeFactor = 1 + positionRatio;
+                } else {
+                  sizeFactor = 2.8 - positionRatio * 2;
+                }
+
+                handle.style.transform = `scale(${sizeFactor})`;
+
+                return Math.round(minAge + positionRatio * valueRange);
+              };
+
+              const moveSliderHandle = (e) => {
+                const sliderRect = slider.getBoundingClientRect();
+                let newLeft =
+                  e.clientX - sliderRect.left - handle.offsetWidth / 2;
+
+                if (newLeft < -handle.offsetWidth / 2) {
+                  newLeft = -handle.offsetWidth / 2;
+                } else if (
+                  newLeft >
+                  slider.offsetWidth - handle.offsetWidth / 2
+                ) {
+                  newLeft = slider.offsetWidth - handle.offsetWidth / 2;
+                }
+
+                //set new handle location
+                handle.style.left = newLeft + "px";
+
+                //update age display
+                updateAge(calculateValue(newLeft));
+              };
+
+              handle.addEventListener("mousedown", (e) => {
+                isDragging = true;
+              });
+
+              document.addEventListener("mousemove", (e) => {
+                if (isDragging) {
+                  moveSliderHandle(e);
+                }
+              });
+
+              document.addEventListener("mouseup", (e) => {
+                if (isDragging) {
+                  isDragging = false;
+                  moveSliderHandle(e);
+                }
+              });
+            });
+          </script>
         </div>
       </div>
     </div>

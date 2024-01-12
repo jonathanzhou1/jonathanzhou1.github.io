@@ -55,3 +55,32 @@
       }
     }
   }
+
+  /** SLIDER CSS */
+  #slider-container {
+    width: 300px;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  #slider {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+  }
+
+  #slider-handle {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/stick-figure.png');
+    background-size: cover;
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    cursor: pointer;
+  }
+
+  #slider-age {
+    padding-top: 20px;
+  }
