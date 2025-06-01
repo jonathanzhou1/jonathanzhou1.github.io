@@ -10,7 +10,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="writings.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -33,7 +33,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="../favicons/pencil.ico" />
-    <title>Blog</title>
+    <title>WRITINGS</title>
   </head>
 
   <body style="font-family: 'Poppins', sans-serif">
@@ -60,9 +60,9 @@
           >
           <a
             class="nav-item nav-link active"
-            href="blog.html"
+            href="writings.html"
             style="color: black"
-            >BLOG<span class="sr-only">(current)</span></a
+            >WRITINGS<span class="sr-only">(current)</span></a
           >
           <a class="nav-item nav-link" href="../contact/contact.html"
             >CONTACT</a
@@ -78,13 +78,31 @@
         color: black;
       "
     >
-      <h1 class="display-4">Blog</h1>
+      <h1 class="display-4">WRITINGS</h1>
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 2em;">
+      <h3 style="margin-bottom: 1em;">Academic Writings</h3>
       <main>
-        <div class="blogPost">
-          <a href="blog-posts/charity.html"
-            ><b class="blogCaption"
+        <div class="writingPost">
+          <a href="writing-posts/VectraFlow_CIDR_CR.pdf"
+            ><b class="writingCaption"
+              >VectraFlow</b
+            ></a
+          >
+          <p>
+            Presented at the Conference of Innovative Data Systems Research (CIDR 2025).
+            <br><br>
+            Streaming settings present distinctive constraints, such as low-latency processing requirements and dynamic data flows, which necessitate new trade-offs and the application of both novel and established techniques. To this end, we are developing VectraFlow, a stream-oriented data flow engine to support scalable monitoring applications involving vector data.
+          </p>
+        </div>
+      </main>
+    </div>
+    <div class="container" style="margin-bottom: 4em;">
+      <main>
+        <h3 style="margin-bottom: 1em;">Misc. Writings</h3>
+        <div class="writingPost">
+          <a href="writing-posts/charity.html"
+            ><b class="writingCaption"
               >God, <em>Gilead</em>, and the Gift of Charity</b
             ></a
           >
@@ -95,34 +113,22 @@
           </p>
         </div>
 
-        <div class="blogPost">
-          <a href="blog-posts/symposium.html"
-            ><b class="blogCaption">A Student's Symposium</b></a
+        <div class="writingPost">
+          <a href="writing-posts/symposium.html"
+            ><b class="writingCaption">A Student's Symposium</b></a
           >
           <p>A discussion on love, charity, and friendship.</p>
         </div>
 
-        <div class="blogPost">
-          <a href="blog-posts/eros.html"
-            ><b class="blogCaption">The Pursuit of Passion</b></a
+        <div class="writingPost">
+          <a href="writing-posts/eros.html"
+            ><b class="writingCaption">The Pursuit of Passion</b></a
           >
           <p>
             What is Eros, or romantic love? A comparison between C.S. Lewis and
             Alice Munros' perspectives, and my own.
           </p>
         </div>
-
-        <!-- <div class="blogPost">
-          <a href="blog-posts/life.html"><b class="blogCaption">Brother</b></a>
-          <p>Poetry from The Life of 530 Words</p>
-        </div> -->
-
-        <!-- <div class="blogPost">
-          <a href="blog-posts/cyclamen.html"
-            ><b class="blogCaption">Cyclamen</b></a
-          >
-          <p>Strands of thoughts, wrapped up in a bouquet of flowers.</p>
-        </div> -->
       </main>
     </div>
   </body>
