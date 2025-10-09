@@ -6,10 +6,10 @@
 
   body {
     height: 100vh;
-    background-image: url('nature-background.png');
-    background-repeat: no-repeat;
+    /* background-image: url('nature-background.png'); */
+    /* background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: cover;
+    background-size: cover; */
   }
 
     /*Form style from Valerite-dev on CodePen*/
