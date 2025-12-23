@@ -124,16 +124,24 @@
                 "https://script.google.com/macros/s/AKfycbylLR1ztaJhrFoAxXjBzDdJ1BcpUG8Xu2zArUbt9vw9hIDZeAu3jYz-QEGpfeLSXi9k/exec";
 
               form.addEventListener("submit", (e) => {
-                submitButton.disabled = true;
                 e.preventDefault();
-                let requestBody = new FormData(form);
-                fetch(scriptURL, { method: "POST", body: requestBody })
-                  .then((response) => {
-                    document.body.classList.add("sent");
+                submitButton.disabled = true;
+
+                // 1) Start animation immediately (next paint so it never “sticks”)
+                requestAnimationFrame(() => document.body.classList.add("sent"));
+
+                // 2) Fire request without delaying the animation
+                const requestBody = new FormData(form);
+
+                fetch(scriptURL, { method: "POST", body: requestBody, keepalive: true })
+                  .then(() => {
+                    // optionally: show success state, clear form, etc.
                     submitButton.disabled = false;
                   })
                   .catch((error) => {
-                    alert("Error!", error.message);
+                    // If you want, roll back animation or show an error message
+                    alert("Error! " + error.message);
+                    document.body.classList.remove("sent");
                     submitButton.disabled = false;
                   });
               });
