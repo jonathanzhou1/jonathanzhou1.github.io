@@ -12,10 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="../../favicons/books.ico">
-        <title>Fall 2022</title>
+        <title>Spring 2026</title>
     </head>
 
-    <body style="font-family: 'Poppins', sans-serif; background-color: rgb(213, 233, 247);">
+    <body style="font-family: 'Poppins', sans-serif; background-color: rgb(244, 213, 247);">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,8 @@
             </div>
         </nav>
 
-        <div class="jumbotron text-center" style="background-color: rgb(213, 233, 247); color: black; margin-bottom: -30px;">
-            <h1 class="display-4">Fall 2022</h1>
+        <div class="jumbotron text-center" style="background-color: rgb(244, 213, 247); color: black; margin-bottom: -30px;">
+            <h1 class="display-4">Spring 2026</h1>
             <p class="lead">Source code may be available on request</p>
         </div>
 
@@ -65,34 +65,40 @@
         </script>
 
         <div class="container" style="padding-bottom: 5vh;">
-                <p>
-                    <strong>CSCI 0190 Accelerated Introduction to Computer Science (inc. Data Structures and Algorithms)</strong>
-                    <br>Course Link: <a href="https://cs.brown.edu/courses/cs019/2022/">https://cs.brown.edu/courses/cs019/2022/</a>
-                </p>
-                <p>
-                    <strong>Completed Projects</strong>
+            <p>
+                <strong>CSCI 1710: Logic for Systems</strong>
+                <br>Course Link: <a href="https://csci1710.github.io/2026/">https://csci1710.github.io/2026/</a>
+            </p>
+            <p>
+                <strong>Notable Projects:</strong>
+                <br>
+                <ul>
+                    <li><b>Among Us Formal Modeler: </b></li>
                     <br>
-                    <ul>
-                        <li><b>DocDiff: </b> Plagiarism checker comparing similarity using string overlap</li>
-                        <br><li><b>Nile: </b> Collaborative filtering using custom data types</li>
-                        <br><li><b>Sortacle: </b> Property based testing for nondeterministic functions</li>
-                        <br><li><b>DS: </b> Data scripting with large sets of data in tables</li>
-                        <br><li><b>Oracle: </b> Nondeterministic property based testing for more complex systems</li>
-                        <br><li><b>FileSystem: </b> Richer data modeling and interactions</li>
-                        <br><li><b>Updater: </b> Constructing a tree structure for dynamic interactions</li>
-                        <br><li><b>ContFracs: </b> Stream programming</li>
-                        <br><li><b>Reactive: </b> Reactive programs and graphics</li>
-                        <br><li><b>JoinLists: </b> Parallel processing using multi-processors</li>
-                        <br><li><b>TweeSearch: </b> Agile software development</li>
-                        <br><li><b>MST: </b> Graph algorithms and second-implementation testing</li>
-                        <br><li><b>Conversions: </b> Graph algorithms and under-specification programming</li>
-                        <br><li><b>MapReduce: </b> Building Google's MapReduce</li>
-                        <br><li><b>Fluid Images:</b> Optimized shrinking of graphics to minimize lost information</li>
-                        <br><li><b>24:</b> Six stage project focused on agile software development and optimization</li>
-                    </ul>
-                </p>
-
-                <blockquote class="m-3" style="margin-top: 3vh !important; box-shadow: inset 5px 0 5px -5px #29627e; font-style: italic; padding-left: 0.8rem;">I also edited chapter <a href="https://dcic-world.org/2023-02-21/booklet_pyret-to-python.html">III From Pyret to Python</a> and section <a href="https://dcic-world.org/2023-02-21/hash-set-kv.html">17.4 Hashes, Sets, and Key-Values</a> for <a href="https://dcic-world.org/">A Data-Centric Introduction to Computing</a>, an introductory Computer Science textbook used at Brown, Northeastern, and UC San Diego, along with many other schools internationally.</blockquote>
+                    Among Us is a multiplayer game about crewmates doing tasks in a spaceship. There are hidden imposters among the crewmates trying to kill the crewmates.
+                    My team and I focused on modeling Among Us emergency meetings throughout the course of a game, while not modeling the game itself, in order to find interesting, unexpected
+                    gameplay dynamics such as different levels of crewmate honesty, imposters that don't kill, etc.
+                    <br><br>
+                    <li><b>2PC Model: </b></li>
+                    <br>
+                    2-Phase Commit is a distributed consensus protocol often used in distributed database managemeny systems to ensure atomic commits or aborts with strict data consistency.
+                    My partner and I modeled this system in Forge and replicated its successful use cases as well as the potential deadlocks.
+                </ul>
+                
+            </p>
+            <br><br>
+            <p>
+                <strong>CSCI 1660: Computer Systems Security</strong>
+                <br>Course Link: <a href="https://brown-csci1660.github.io/">https://brown-csci1660.github.io/</a>
+            </p>
+            <p>
+                <strong>Term Project: </strong>
+                <br><br>
+                <b>Dropbox: </b>
+                <br><br>
+                Implemented an API for a secure file storage system where the Dataserver for storage is untrusted, users are untrusted as well, but there is trustworthy PKI for public key cryptography. 
+                The system allows users to create accounts, upload files, download files, share files, and revoke file access.
+            </p>
         </div>
     </body>
 </html>
